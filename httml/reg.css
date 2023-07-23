@@ -1,0 +1,63 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+}
+.c1{
+    border: 1px black solid;
+    border-radius: 5px;
+    background-position: 30px;
+    box-shadow: inset -2px 2px 2px 2px ;
+                
+    
+    width:450px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    height: fit-content;
+    color:black;
+}
+button{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 30px;
+    background-color:transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(255, 0, 0) ;
+}
+table,td{
+    color: black;
+    font-size: 25;
+}
+.c2{
+    background-image: url(bubble.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img{
+    height: 40px;
+    width: 40px;
+    
+    border-radius: 50px;
+    margin-top: 100;
+    margin-left: 30px;
+    animation: forwards;
+    
+}
+.sidebar{
+    width: 100px;
+    height:100vh;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background:linear-gradient(pink,rgb(0, 238, 255));
+    
+    
+    
+}
+hr{
+    color: black;
+}
