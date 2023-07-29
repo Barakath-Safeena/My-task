@@ -1,0 +1,32 @@
+html{
+    background-color: moccasin;
+}
+.c1{
+    background-color: dimgrey;
+    text-align: center;
+    border: 1px black solid;
+    height: 500px;
+    width: 400px;
+    margin-top: 100px;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+input{
+    height:50px;
+    width: 200;
+    text-align: center;
+}
+button{
+    height: 45px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 20;
+    border: black 2px solid;
+    color:black;
+    cursor: pointer;
+     
+    
+
+}
+

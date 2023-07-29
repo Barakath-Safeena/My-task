@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            length converter
+        </title><link rel="stylesheet" href="style.css">
+
+    </head>
+    <body><center><div class="c1">
+        <h1>INCH CONVERTER</h1>
+        <br>
+        <br>
+        <input type="text" id="number" placeholder="ENTER A NUMBER IN  cm">
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit" onclick="convert()">convert to inches</button>
+        <br><br>
+        <div id="result" style="font-size: 50px;"><div class="c2"></div>
+        </div>
+        </center>
+        <script>
+            function convert(){
+               let cm= Number(document.getElementById("number").value);
+               let inch=cm/2.54;
+               let result=document.getElementById("result");
+               result.innerHTML=inch.toFixed(3)+"inches";
+
+            }
+        </script>
+    </body>
+</html>
