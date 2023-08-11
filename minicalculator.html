@@ -1,0 +1,128 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>
+            arithmetic
+        </title>
+        <style>
+            html{
+                background-color:bisque;
+            }
+            button{
+                border-radius: 50px;
+                height: 35px;
+                width:100px;
+                color: aliceblue;
+                background-color: orange;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            button:hover{
+                background-color: black;
+            }
+            .c1{
+                border: 2px rgb(40, 173, 144) solid;
+                height: fit-content;
+                width: fit-content;
+                border-radius: 5px;
+                box-shadow: inset -2px -2px 2px 2px;
+                margin-top: 200px;
+                margin-bottom: 200px;
+                background-color: aliceblue;
+
+            }
+            input{
+                margin-top: 30px;
+                
+                border-radius: 5px;
+                margin-right: 10px;
+                height: 35px;
+                font-size: 20px;
+            }
+            #result{
+                font-size: 30px;
+            }
+            h2{
+                text-align: center;
+                
+                height: 50px;
+                width: fit-content;
+                margin-left: 15px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        </style>
+
+    </head><body><center><div class="c1">
+        <h2>MINI CALCULATOR</h2>
+    
+       Enter the value1: <input id="val1" required><br>
+        Enter the value2:<input id ="val2" required>
+        <br>
+        <br>
+        <button onclick="fun()">Add</button>
+        <button onclick="sub()">Subtract</button>
+        <button onclick="mul()">Multiply</button><br><br>
+        <button onclick="divide()">Divide</button>
+        <button onclick="percent()">percentage%</button>
+        <button onclick="sqrt()">Sqrt</button><br>
+       <br>
+        <br>
+        
+        <div id="result"></div>
+        </div></center>
+        <script>
+             
+            function fun(){
+                let value1=parseInt(document.getElementById("val1").value)
+                let val2=parseInt(document.getElementById("val2").value)
+               
+                
+                let res=value1+val2
+               let result= document.getElementById("result");
+               result.innerHTML="Answer:"+res
+                
+                
+            }
+            function sub(){
+                let value1=parseInt(document.getElementById("val1").value)
+                let val2=parseInt(document.getElementById("val2").value)
+                
+                res=value1-val2
+            result=document.getElementById("result");
+            result.innerHTML="Answer:"+res
+
+            }
+            function mul(){
+                let value1=parseInt(document.getElementById("val1").value)
+                let val2=parseInt(document.getElementById("val2").value)
+                res=value1*val2
+                result=document.getElementById("result");
+                result.innerHTML="Answer:"+res
+            }
+            function divide(){
+                let value1=parseInt(document.getElementById("val1").value)
+                let val2=parseInt(document.getElementById("val2").value)
+               let res1=value1/val2
+               
+                result=document.getElementById("result");
+                result.innerHTML="Answer:"+res1.toFixed(4)
+                
+            }
+            function percent(){
+                let value1=parseInt(document.getElementById("val1").value)
+                res=value1/100;
+                result =document.getElementById("result")
+                result.innerHTML="Answer:"+res
+            }
+            function sqrt(){
+                let value1=parseInt(document.getElementById("val1").value)
+                
+                let res=Math.sqrt(value1);
+               let result =document.getElementById("result")
+                result.innerHTML="Answer:"+res.toFixed(4)
+
+            }
+            
+        
+        </script>
+    </body>
+</html>
