@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>
+            increase 0r decrease
+        </title><style>
+            html{
+                background-color:aquamarine;
+            }
+            .c1{
+                border:1px black solid;
+                border-radius: 5px;
+                height:250px;
+                width: fit-content;
+                justify-items: auto;
+                word-spacing: 5px;
+                margin-top: 200px;
+                margin-bottom: 200px;
+                box-shadow: inset -2px 2px 2px 2px;
+                background-color:burlywood;
+                
+                
+            }
+            button{
+                margin-left: 25px;
+                margin-right: 25px;
+                height: 40px;
+                width: 150px;
+                text-align: center;
+                color: black;
+                background-color: transparent;
+                border-radius: 50px;
+
+            }
+            #value{
+                border: 2px black solid;
+                border-radius: 50px;
+                font-size: 20px;
+                height: 50px;
+                width: 50px;
+                margin-top: 20px;
+                text-align: center;
+                padding-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="c1">
+            <div id="value">0</div><br>
+            <br>
+            <br>
+            <button onclick="increase()">INCREASE</button>
+            <button onclick="decrease()">DECREASE</button>
+            <button onclick="clears()">CLEAR</button>
+</div>
+        </center>
+        <script>
+            let value=0;
+            function increase(){
+                value=value+1
+                document.getElementById("value").innerHTML=value
+            }
+            function decrease(){
+                value=value-1;
+                document.getElementById("value").innerHTML=value;
+            }
+            function clears(){
+                value=0;
+                document.getElementById("value").innerHTML=value;
+            }
+        </script>
+    </body>
+</html>
