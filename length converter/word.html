@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            wordcounter
+        </title><link rel="stylesheet" href="style.css">
+    </head>
+    <body><center>
+        <div class="c1">
+            <h2>WORDLENGTH</h2>
+            <div class="c2">
+            <textarea id="word"></textarea>
+            </div>
+            <br>
+            <br>
+
+            <button type="submit"onclick="action()" style="font-size: 20px;" >No Of Words</button> 
+
+<div id="result" style="font-size: 50px;"></div>
+        </div></center>
+        <script>
+            function action(){
+                let word=document.getElementById("word").value;
+                let length=word.length;
+                let result=document.getElementById("result")
+                result.innerHTML=length
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+<html>
+    <head>
+    <title>
+        script
+    </title>
+    </head>
+    <body>
+        <script>
+            let str="safee";
+            let str1="na";
+            /*
+            string slice(start,end)
+            str.slice(0,2)
+            string(start,end)
+            substring(start,length)
+            str.touppercase
+            str.tolowercase
+            str.replace(safee,safeena)
+            */
+
+
+
+
+           //template literals
+
+           let name='barakath'
+           let lname='safeena'
+           let place="avadi"
+           let msg=` ${name} ${lname} lives in ${place}`
+           
+
+
+
+           console.log(msg);
+           let itemcount=5
+           let total='$95'
+           console.log(`You have ${itemcount} items in your cart.
+your bill amount is ${total}`);
+
+
+//Arrays
+let places=["avadi","koratur","kerala"]
+let ratings=[10,10,100,98,76,8,9,[4,5]]
+console.log(places[1]+" is rated as "+ratings[1]+"th position")
+console.log(ratings.length)
+console.log(ratings)
+console.log(ratings[7][0])
+let matrix=[[3,4,5],[4,5,7],[6,7,8]]
+console.log(matrix[2][1])
+let no=[1,2,3,4,7,8,9]
+no.push(0)
+console.log(no)
+no.pop(0)
+no.shift()
+console.log(no)
+
+//splice
+no.splice(1,3,'x','y','z')
+console.log(no)
+console.log(no.slice(0,3))
+console.log(no.reverse())
+console.log(no.join())
+let nos="safee"
+console.log(nos.split(','))
+
+let sa=[1,3,4,5]
+
+console.log(sa.splice(1,1))
+console.log(sa)
+
+
+//spread operator(...)
+let spread=[...no,...nos]
+console.log(spread)
+
+
+//taskk
+
+let arr=[5,8,10,7,9,11]
+arr.splice(3,5,17,19,111)
+console.log(arr)
+
+arr.unshift(100)
+arr.push(200)
+arr.push(1000)
+console.log(arr)
+console.log(arr.length)
+arr.splice(5,9,0,17,19,111,200,1000)
+console.log(arr)
+
+
+//if else
+let code=true
+if(code)
+console.log("yes there is a code")
+else
+console.log("not a code")
+let a=10,b=20
+let grade=a
+let max
+/* 
+if(a>b)
+max=a
+else
+max=b
+console.log(max)
+*/
+max=(a>b)?a:b
+console.log(max)
+  
+let word="sas"
+let rev="";
+let len=word.length;
+for(let i=len-1;i<=0;--i){
+    rev=rev+word.charAt(i)
+}
+if(word.toLowerCase()==rev.toLowerCase()){
+    console.log(word+"pali");
+
+}
+
+
+function isPalindrome(str) {
+	var j = str.length-1
+	for(var i=0; i<str.length/2; i++){
+		if(str[i]!=str[j]){
+			return false;
+		}
+		j--;
+	}
+	return true;
+}
+
+var str1 = "racecar";
+var str2 = "nitin";
+var str3 = "Rama";
+
+console.log(isPalindrome(str1));
+console.log(isPalindrome(str2));
+console.log(isPalindrome(str3));
+
+
+
+        </script>
+    </body>
+</html>

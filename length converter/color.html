@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>color</title>
+        <style>
+            input{
+                height: 200px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="helo"></div>
+        <input id="color">
+        <button onclick="blue()">BLUE</button>
+        <button onclick="pink()">PINK</button>
+        <button onclick="image()">image</button>
+        <div id="value">0</div>
+        <button onclick="change()">change</button>
+        <script>
+            const helo=document.getElementById("helo").innerHTML="hello everyone!!"
+            
+            function blue(){
+                document.getElementById("color").style.backgroundColor="blue";
+            }
+            function pink(){
+                document.getElementById("color").style.backgroundColor="pink"
+            }
+            function image(){
+                document.getElementById("color").style.backgroundImage="url('bubble.avif')"
+            }
+            let value=0
+            function change(){
+                value=value+1;
+                document.getElementById("value").innerHTML=value;
+            }
+        </script>
+    </body>
+</html>

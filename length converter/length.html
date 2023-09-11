@@ -14,16 +14,16 @@
         <br>
         <br>
         <br>
-        <button type="submit" onclick="convert()">convert to inches</button>
+        <button type="submit" onclick="convert()" style="font-size: 20px;">convert to inches</button>
         <br><br>
         <div id="result" style="font-size: 50px;"><div class="c2"></div>
         </div>
         </center>
         <script>
             function convert(){
-               let cm= Number(document.getElementById("number").value);
-               let inch=cm/2.54;
-               let result=document.getElementById("result");
+               const cm= Number(document.getElementById("number").value);
+               const inch=cm/2.54;
+               const result=document.getElementById("result");
                result.innerHTML=inch.toFixed(3)+"inches";
 
             }

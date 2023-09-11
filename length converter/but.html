@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display 1's on Button Click</title>
+</head>
+<body>
+    <button onclick="one()">Click Me (1)</button>
+    <p id="displayNumbers">1</p>
+    <button onclick="two()">2</button>
+    <p id="value">2</p>
+
+
+    <script>
+        function one(){
+        const displayNumbers = document.getElementById('displayNumbers');
+        
+        
+            displayNumbers.textContent +=1;
+        }
+        function two(){
+            const values=document.getElementById("value");
+            value.textContent +=2;
+        }
+    </script>
+</body>
+</html>

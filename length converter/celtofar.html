@@ -1,0 +1,34 @@
+<html>
+    <head><title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><center>
+    <div class="c1">
+        <h1>CELCIUS TO FAHRENHIET</h1>
+        <br>
+        <br>
+        <br>
+        <input type="text" id="input" placeholder="Enter a value in °c">
+        <br>
+        <br>
+        <button type="submit" onclick="get()" >CONVERT TO FAHRENHIET</button>
+        <br>
+        <br>
+        <div id="result" style="font-size: 50px;"></div>
+    </div></center>
+    <script>
+        function get(){
+            const cel=Number(document.getElementById("input").value);
+            const fahr=(cel*1.8)+32;
+            const result=document.getElementById("result");
+            result.innerHTML=fahr+" °F"
+        }
+        //Math functions
+        /*
+        Math.round(4.5)
+        */
+        
+    </script>
+</body>
+
+</html>

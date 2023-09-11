@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ebbill</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body><center><div class="c1">
+        <h2>EB BILL CALCULATOR</h2>
+        <br>
+        <br>
+        <br>
+        <input type="text"id="bill" placeholder="enter the units" >
+        <br>
+        <br>
+        <button type="submit" onclick="convert()"> CONVERT</button>
+        <br>
+        <br>
+
+        <div id="result" style="font-size: 30px;"></div>
+
+        </div>
+        </center>
+        <script>
+            function convert(){
+                let unit=Number(document.getElementById("bill").value);
+                let convert;
+                let extra;
+                let results;
+                if(unit<100){
+                convert=50*0.75;
+                extra =unit-50
+            results=extra+convert;
+                }
+            else if(unit>100){
+convert=unit*1;
+extra=unit-100;
+results=convert+extra
+            }
+
+           let result=document.getElementById("result")
+              result.innerHTML=results
+            
+            }
+        </script>
+    </body>
+</html>

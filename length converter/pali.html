@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0">
+    <title>palindrome</title>
+
+</head>
+<body>
+    <h2>palindrome</h2>
+    <input id="palindrome">
+    <button type="submit" onclick="palis()">click</button>
+    <div id="result">0</div>
+    
+</body>
+<script>
+   function palis(){
+    let pali=document.getElementById("palindrome").value
+    if(pali===pali.split("").reverse().join("")){
+        document.getElementById("result").innerHTML=pali+" is a palindrome"
+    }
+    else{
+        document.getElementById("result").innerHTML=pali+ "   is not a palindrome" 
+    }
+    let result =pali
+      }
+</script>
+</html>
